@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Block and inline block practice</title>
+  <style>
+
+   .form{
+    display: block;
+    margin-bottom: 1rem;
+   }
+
+   .para{
+    display: inline-block;
+    width:300px;
+   }
+
+   .para, .button{
+    vertical-align: middle;
+   }
+
+   .div3{
+    background-color: aquamarine;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 15px;
+  
+   }
+
+  
+   .google-img{
+    display: block;
+    width: 20rem;
+
+   }
+   .search-bar{
+    display: inline-block;
+    font-size: 18px;
+    width: 40rem;
+    height: 3rem;
+    border-radius: 10px;
+    border: none;
+     box-shadow: 1px 1px 20px rgba(9, 2, 2, 0.835);
+   }
+   
+   
+  </style>
+</head>
+<body>
+
+  <div>
+    <input class="form" type="text" placeholder="Name">
+    <input type="text" placeholder="Email">
+  </div>
+
+  <div class="div2">
+    <p class="para">Thanks for chatting with our customer support. Would you like to take our quick survey?</p>
+    <button class="button">Yes</button>
+    <button class="button">No</button>
+  </div>
+
+  <div class="div3">
+    <img class="google-img" src="Google_2015_logo.svg.webp" alt="google-logo">
+    <input class="search-bar" type="text" placeholder="Search Googlr or type a URL">
+  </div>
+</body>
+</html>
