@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>div practice</title>
+
+    <style>
+      * {
+        box-sizing: border-box;
+        margin: 0;
+      }
+
+      .wrapper {
+        border: 1px solid black;
+        display: inline-block;
+        padding: 1rem;
+        margin: 50px;
+      }
+      .name input {
+        height: 40px;
+        width: 200px;
+        border: 1px solid gray;
+        border-radius: 10px;
+        padding: 5px 10px;
+        font-size: 20px;
+        margin-bottom: 20px;
+      }
+
+      .email input {
+        height: 40px;
+        width: 400px;
+        border: 1px solid gray;
+        border-radius: 10px;
+        padding: 5px 10px;
+        font-size: 20px;
+        margin-bottom: 20px;
+      }
+
+      .button button {
+        height: 50px;
+        width: 400px;
+        border: 1px solid gray;
+        border-radius: 10px;
+        padding: 5px 10px;
+        font-size: 20px;
+        background-color: blue;
+        font-weight: bolder;
+        color: white;
+      }
+
+      .wrapper2{
+         border: 1px solid black;
+        display: inline-block;
+        padding: 1rem;
+        margin: 50px;
+      }
+
+      h1{
+        margin-bottom: 30px;
+      }
+
+      .text{
+        display: flex;
+        flex-direction: column;
+      }
+
+      .text input{
+        height: 40px;
+        width: 400px;
+        border: none;
+        padding: 5px 15px;
+        font-size: 16px;
+        margin-bottom: 20px;
+        background-color: #f4ecec;
+    
+      }
+
+      .button2  button{
+        height: 50px;
+        width: 200px;
+        border: 1px solid gray;
+        padding: 5px 10px;
+        font-size: 20px;
+        font-weight: normal;
+     
+      }
+
+      .black{
+        background-color: black;
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="name">
+        <input type="text" placeholder="First name" />
+        <input type="text" placeholder="Last name" />
+      </div>
+
+      <div class="email">
+        <input type="email" placeholder="Email" />
+      </div>
+
+      <div class="button">
+        <button>Sign Up</button>
+      </div>
+    </div>
+
+    <div class="wrapper2">
+      <h1>Request a ride now</h1>
+
+      <div class="text">
+        <input type="text" placeholder="Enter pickup location" />
+        <input type="text" placeholder="Enter destination" />
+      </div>
+
+      <div class="button2">
+        <button class="black">Request now</button>
+        <button>Schedule for later</button>
+      </div>
+    </div>
+  </body>
+</html>
